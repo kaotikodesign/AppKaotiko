@@ -34,13 +34,13 @@ function menu(toPage) {
     {#if idx.NameProducto === type}
     <ul class="BoxArticulo">        
         <!--li>Nombre: {idx.NameProducto}</li-->
-        <li><img alt="{idx.ImgProducto.filename}" src="http://localhost:3000/api/imagenProducto/?file={idx.ImgProducto.file}"/></li>
-        <li>Descripción: {idx.DescriProducto}</li>        
-        <li>Precio: {idx.PrecioProducto}</li>
-        <li>Color: {idx.ColorProducto}</li>
-        <li>Tamaños: {idx.SizeProducto}</li>
-        <li>Envio: {idx.PrecioEnvioProducto}</li>
-        <li>Visitas: {idx.NumeroVisitas}</li>
+        <li><img class="ImgArticulo" alt="{idx.ImgProducto.filename}" src="http://localhost:3000/api/imagenProducto/?file={idx.ImgProducto.file}"/></li>      
+        <h3 class="Titule">Precio: </h3><li>{idx.PrecioProducto}</li>
+        <h3 class="Titule">Color: </h3><li>{idx.ColorProducto}</li>
+        <h3 class="Titule">Tamaños: </h3><li>{idx.SizeProducto}</li>
+        <h3 class="Titule">Envio: </h3><li>{idx.PrecioEnvioProducto}</li>
+        <h3 class="Titule">Descripción:</h3><li>{idx.DescriProducto}</li> 
+        <li class="Titule">Visitas: </li><li>{idx.NumeroVisitas}</li><!--Número de clicks-->
     </ul>
     {/if}
     {/each}
@@ -49,9 +49,15 @@ function menu(toPage) {
 
 </main>
 <style>
+    /* PAGINA WEB*/
+    .Titule{
+        font-style: sans-serif,bold;
+        color:black;
+        margin: auto;
+    }
+    
+
     .BoxArticulo{
-    /*display:flex;*/
-	/*display: inline-table;*/
     padding: 15px;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -70,12 +76,50 @@ function menu(toPage) {
         max-height: 80px;
     }
 
-    img{        
-    float:right;
-    /*max-width: 90vw;*/
-    max-height: 150px;
-    max-width: 150px;
+    .ImgArticulo{
+    float:inline-end;
+    max-width: 90vw;
+    max-height: 250px;
+    max-width: 250px;
     align-items: center;
 	}
+
+    /*img{        
+    float:right;
+    /*max-width: 90vw;
+    max-height: 125px;
+    max-width: 125px;
+    align-items: center;
+	}*/
+
+    /* APP ----------------------------------------------------------------------------*/
+
+    /*.BoxArticulo{
+    display:flex;
+    padding: 15px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(168, 168, 168, 0.8);
+    background-color: #eeeeee; 
+	max-width: 300px;
+    max-width: 100vw;  /*Ancho pantalla
+	list-style-type: none;
+	}
+    .BtnFlotante{
+        position:fixed;
+        top:10px;
+        right:10px;
+        max-width:80px;
+        max-height: 80px;
+    }
+
+    img{        
+    float:right;
+    /*max-width: 90vw;
+    max-height: 125px;
+    max-width: 125px;
+    align-items: center;
+	}*/
 
 </style>

@@ -8,20 +8,33 @@ function menu(toPage) {
 </script>    
 <main> 
     <div id="MainMenu">
-        <img alt="3D" src="uploads/Botones/BtnTienda.png" on:click={()=>menu('App')}/>
-        <img alt="Camisetas" src="uploads/Botones/BtnGaleria.png" on:click={()=>menu('Galeria')}/>
-        <img alt="User" src="uploads/Logos/Logo_user.png" />
-    </div>  
+        <img class="imgBtn" alt="3D" src="uploads/Botones/BtnTienda.png" on:click={()=>menu('App')}/>
+        <img class="imgBtn" alt="Camisetas" src="uploads/Botones/BtnGaleria.png" on:click={()=>menu('Galeria')}/>
+        <img class="imgBtn" alt="User" src="uploads/Logos/Logo_user.png" />
+    </div> 
+    <div class="oferta">
+        <img alt ="imagen" class="ImgCentralOferta" src="uploads/Logos/imsta35919.png">
+    </div>
 </main>
     
     <style>
-    #MainMenu{
-        text-align: center;
+       /*Pagina web*/
+       .ImgCentralOferta{
+    position:absolute;
+    max-width: 100vw;
+    margin:auto;
+    top:10px;
+    left:200px;
     }
-        img{        
-    max-width: 160px;
-    max-height: 160px;
+
+    .imgBtn{            
+    max-width: 125px;
+    max-height: 125px;
     border-radius: 50%;
+    display: flex;
 	}
-   
+
+    #MainMenu{
+        text-align: center; 
+    }   
     </style>

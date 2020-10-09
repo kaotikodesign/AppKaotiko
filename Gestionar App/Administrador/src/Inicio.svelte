@@ -66,8 +66,8 @@ function enviar () {
             <input bind:value={TituloHTML} placeholder="Título" type="text">
         </label>
         <label>
-            Descripción:
-            <input bind:value={DescriHTML} placeholder="Descripción" type="text">
+            Descripción:<br>
+            <textarea style="resize: none;max-width: 265px;" bind:value={DescriHTML} placeholder="Descripción" type="text"></textarea>
         </label>
         <label>
             Color:
