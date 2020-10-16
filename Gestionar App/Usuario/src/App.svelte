@@ -15,6 +15,7 @@ function menu(toPage,toType) {
         <img class="imgBtn" alt="Tazas" src="uploads/Botones/BtnTaza.png" on:click={()=>menu('Articulos','Tazas')}/>
         <img class="imgBtn" alt="Relojes" src="uploads/Botones/BtnReloj.png" on:click={()=>menu('Articulos','Relojes')}/>
         <img class="imgBtn" alt="Cojines" src="uploads/Botones/BtnCojin.png" on:click={()=>menu('Articulos','Cojines')}/>
+        <img class="imgBtn" alt="Madera" src="uploads/Botones/Btn_Madera.png" on:click={()=>menu('Articulos','Madera')}/>
         <img alt="User" class="BtnFlotante" src="uploads/Botones/BotonAtras.png" on:click={()=>menu('Menu')}/>
     </div>
     <div class="oferta">

@@ -65,8 +65,9 @@ function menu(toPage) {
     border: 1px solid rgba(168, 168, 168, 0.8);
     background-color: #eeeeee; 
 	max-width: 300px;
-    max-width: 100vw;  /*Ancho pantalla*/
+    max-width: 40vw;  /*Ancho pantalla*/
 	list-style-type: none;
+    margin: 5px;
 	}
     .BtnFlotante{
         position:fixed;
@@ -83,6 +84,9 @@ function menu(toPage) {
     max-width: 250px;
     align-items: center;
 	}
+    #Productos{
+        display:flex;
+    }
 
     /*img{        
     float:right;

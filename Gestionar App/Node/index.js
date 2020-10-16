@@ -7,7 +7,7 @@ async function main() {
   const multer = require('multer');
   const mimeParser = multer( { dest: './uploads/',
   limits: {
-      fileSize: 100000,
+      fileSize: 1000000,
   }, } );
   const { MongoClient, ObjectID } = require('mongodb');
 
